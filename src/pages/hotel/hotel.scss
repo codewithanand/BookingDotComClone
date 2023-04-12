@@ -1,0 +1,146 @@
+.hotel{
+    .sliderContainer{
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 99vw;
+        height: 99vh;
+        background: rgba($color: #000000, $alpha: 0.9);
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        .sliderWrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                object-fit: cover;
+                width: 80%;
+                height: 90vh;
+            }
+        }
+        .closeBtn{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        .arrow{
+            margin: 20px;
+            font-size: 50px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+    .hotelContainer{
+        padding: 50px 0;
+        .hotelWrapper{
+            width: 100%;
+            max-width: 1024px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+            .bookNow{
+                position: absolute;
+                top: 10px;
+                right: 0;
+                border: none;
+                padding: 10px 20px;
+                font-weight: bold;
+                background-color: #0098fd;
+                color: white;
+                cursor: pointer;
+                border-radius: 3px;
+            }
+            .hotelTitle{
+                font-size: 24px;
+            }
+            .hotelAddress{
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                span{
+
+                }
+            }
+            .hotelDistance{
+                color: #0071c2;
+                font-weight: bold;
+            }
+            .hotelPriceHighlight{
+                color: #008009;
+                font-weight: bold;
+            }
+            .hotelImages{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+                .imgWrapper{
+                    width: 33%;
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                    }   
+                }
+            }
+            .hotelDetails{
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                .hotelDetailTexts{
+                    flex: 3;
+                    .hotelDescTitle{
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                    }
+                    .hotelDesc{
+
+                    }
+                }
+                .hotelDetailPrice{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    background-color: #ebf3ff;
+                    padding: 20px;
+                    border-radius: 10px;
+                    h1{
+                        font-size: 20px;
+                    }
+                    span{
+                    }
+                    h2{
+                        font-size: 24px;
+                        font-weight: 100;
+                    }
+                    button{
+                        border: none;
+                        padding: 10px 20px;
+                        font-weight: bold;
+                        background-color: #0098fd;
+                        color: white;
+                        cursor: pointer;
+                        border-radius: 3px;
+                    }
+                }
+
+            }
+        }
+
+    }
+}

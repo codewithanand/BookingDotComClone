@@ -1,0 +1,67 @@
+.fProperties{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    gap: 20px;
+    margin-bottom: 10px;
+    /* width */
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    .fPropItem{
+        width: 250px;
+        cursor: pointer;
+        img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .fPropTitles{
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 12px;
+            }
+            .fPropReview{
+                display: flex;
+                align-items: center;
+                font-size: small;
+                gap: 5px;
+                .rating{
+                    background-color: blue;
+                    color: white;
+                    border-radius: 0 5px 0 5px;
+                    padding: 5px;
+                }
+                .reviews{
+
+                }
+                .reviewCount{
+
+                }
+            }
+        }
+    }
+}

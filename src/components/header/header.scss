@@ -1,0 +1,136 @@
+.header{
+    background-color: #0039a3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container{
+        width: 100%;
+        max-width: 1024px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        .item{
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            gap: 5px;
+            color: white;
+            cursor: pointer;
+            border-radius: 40px;
+            font-size: small;
+        }
+        .item:hover{
+            background-color: rgba($color: white, $alpha: 0.1);
+        }
+        .active{
+            border: 2px solid white;
+        }
+    }
+    .hero{
+        width: 100%;
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 80px;
+        display: flex;
+        justify-content: center;
+        background: url("https://r-xx.bstatic.com/xdata/images/xphoto/2880x868/207074833.jpeg?k=7f5cb59e23576abf2c5b4c022e55c7a1c4a5b7181ed3b8ecf833bc7541b77485&o=");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background: #0039a3;
+        position: relative;
+        .heroDesc{
+            width: 80%;
+            max-width: 1024px;
+
+            .headerTitle{
+                font-size: 50px;
+                margin-bottom: 10px;
+            }
+            .headerDesc{
+                font-size: 25px;
+                margin-bottom: 50px;
+            }
+            .headerBtn{
+                border: none;
+                border-radius: 3px;
+                background-color: #009de6;
+                color: white;
+                padding: 20px;
+            }
+        }
+        .headerSearch{
+            width: 100%;
+            max-width: 1024px;
+            position: absolute;
+            bottom: -25px;
+            background-color: #febb02;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+            padding: 5px;
+            .headerSearchItem{
+                flex: 1;
+                background-color: white;
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: #333;
+                position: relative;
+                padding: 10px;
+                input{
+                    flex: 1;
+                    border: none;
+                    outline: none;
+                }
+                
+                .date{
+                    position: absolute;
+                    top: 50px;
+                    z-index: 2;
+                }
+                .options{
+                    z-index: 2;
+                    position: absolute;
+                    top: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: white;
+                    color: #333;
+                    padding: 20px;
+                    gap: 10px;
+                    .optionItem{
+                        display: flex;
+                        align-items: center;
+                        .optionText{
+                            flex: 1;
+                            margin-right: 10px;
+                        }
+                        .optionCounterButton{
+                            width: 30px;
+                            height: 30px;
+                        }
+                        .optionCounterButton:disabled{
+                            cursor: not-allowed;
+                        }
+                        .optionCounterNumber{
+                            margin: 0 10px;
+                        }
+                    }
+                }
+            }
+            button.searchBtn{
+                border: none;
+                padding: 15px 25px;
+                background-color: #009de6;
+                color: white;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+        }
+    }
+}

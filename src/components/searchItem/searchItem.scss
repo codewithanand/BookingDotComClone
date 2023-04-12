@@ -1,0 +1,96 @@
+.resultItem{
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    .riImg{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .riDesc{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .riTitle{
+            color: #0098fd;
+            font-size: 20px;
+        }
+        .riDistance{
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .riTaxiOp{
+            font-size: small;
+            background-color: #0d9900;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: max-content;
+            margin-bottom: 10px;
+        }
+        .riSubtitle{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .riFeatures{
+            font-size: small;
+            margin-bottom: 10px;
+        }
+        .riCancelOp{
+            color: #0d9900;
+            font-weight: bold;
+        }
+        .riCancelOpSubtitle{
+            color: #0d9900;
+            font-size: small;
+        }
+    }
+    .riDetails{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .riRatings{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .riRemarks{
+                font-weight: bold;
+            }
+            .riRating{
+                background-color: blue;
+                padding: 5px;
+                border-radius: 0 5px 0 5px;
+                color: white;
+            }
+        }
+        .riDetailText{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 5px;
+            .riPrice{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .riTaxOp{
+                text-align: right;
+                color: #555;
+                font-size: small;
+            }
+            .riAvail{
+                border: none;
+                padding: 10px 20px;
+                font-weight: bold;
+                background-color: #0098fd;
+                color: white;
+                cursor: pointer;
+                border-radius: 3px;
+            }
+        }
+    }
+}

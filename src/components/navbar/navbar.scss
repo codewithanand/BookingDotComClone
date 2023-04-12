@@ -1,0 +1,33 @@
+.navbar{
+    background-color: #0039a3;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        width: 100%;
+        max-width: 1024px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .buttons{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            button{
+                border: none;
+                border-radius: 3px;
+                padding: 10px;
+                font-weight: bold;
+                color: #0039a3;
+                background-color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
