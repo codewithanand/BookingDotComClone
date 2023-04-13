@@ -1,0 +1,3 @@
+username: codebyaanand
+password: DIKffunkEalzTmhd
+uri: mongodb+srv://codebyaanand:<password>@booking.dltw9tf.mongodb.net/?retryWrites=true&w=majority
