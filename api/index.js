@@ -2,6 +2,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose'
 import cookieParser from 'cookie-parser'
+import cors from 'cors'
 
 import authRoute from './routes/auth.js'
 import hotelsRoute from './routes/hotels.js'
@@ -31,6 +32,13 @@ mongoose.connection.on("connected", () => {
 //MIDDLEWARES
 app.use(cookieParser())
 app.use(express.json())
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Credentials", true)
+    next()
+})
+app.use(cors({
+    origin: "http://localhost:3000"
+}))
 
 app.use("/api/auth", authRoute)
 app.use("/api/hotels", hotelsRoute)
